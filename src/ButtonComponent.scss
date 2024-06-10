@@ -1,0 +1,32 @@
+$font-size-label: 18px;
+$font-size-input: 16px;
+$height-input: 50px;
+$width-input: 200px;
+$width-res: 280px;
+$margin-bottom-label: 10px;
+$margin-top-res: 20px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.label {
+  font-size: $font-size-label;
+  margin-bottom: $margin-bottom-label;
+}
+
+.input {
+  height: $height-input;
+  width: $width-input;
+  font-size: $font-size-input;
+}
+
+.res {
+  width: $width-res;
+  text-align: center;
+  margin-top: $margin-top-res;
+}

@@ -6,7 +6,8 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import Homeview from './views/HomeView.tsx';
-import AboutView from './views/AboutView.tsx';
+import FilView from './views/FilView.tsx';
+import ButtonComponent from './views/ButtonView.tsx';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/about',
-    element: <AboutView/>
+    element: <FilView/>
+  },
+  {
+    path: '/button',
+    element: <ButtonComponent/>
   }
 ])
 
@@ -24,7 +29,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <nav>
       <ul>
         <li><a href={'/'}>home</a></li>
-        <li><a href={'/about'}>about</a></li>
+        <li><a href={'/about'}>Fils</a></li>
+        <li><a href={'/button'}>String Button</a></li>
       </ul>
     </nav>
     <RouterProvider router={router} />
